@@ -1154,40 +1154,27 @@ html {
 
 /* ========== AnhBABao Gradient Title ========== */
 .gradient-title {
-  font-size: 4.5rem !important;
+  font-size: 3rem !important;
   font-weight: 900 !important;
-  line-height: 1.1;
+  line-height: 1.2;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem !important;
-}
-
-.robot-logo {
-  font-size: 4rem;
-  display: inline-block;
-  animation: robot-bounce 2s ease-in-out infinite;
-  filter: drop-shadow(0 0 25px rgba(255, 0, 128, 0.6));
-  transform-origin: center bottom;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #ff0080, #ff8c00, #ffd700, #40e0d0, #ff0080);
+  background: linear-gradient(135deg, #ff0066, #ff3300, #ff8800, #00ddff, #8800ff);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: gradient-shift 4s ease infinite;
   font-family: 'Inter', sans-serif;
-  letter-spacing: -0.03em;
-}
-
-.subtitle-text {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #6b7280;
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
+  font-size: 3.75rem;
+  font-weight: 900;
+  filter: drop-shadow(0 2px 4px rgba(255, 0, 102, 0.3));
 }
 
 @keyframes gradient-shift {
@@ -1199,34 +1186,15 @@ html {
   }
 }
 
-@keyframes robot-bounce {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-    filter: drop-shadow(0 0 25px rgba(255, 0, 128, 0.6));
-  }
-  25% {
-    transform: translateY(-8px) rotate(-5deg);
-    filter: drop-shadow(0 0 30px rgba(255, 140, 0, 0.7));
-  }
-  50% {
-    transform: translateY(0) rotate(0deg);
-    filter: drop-shadow(0 0 25px rgba(64, 224, 208, 0.6));
-  }
-  75% {
-    transform: translateY(-8px) rotate(5deg);
-    filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.7));
-  }
-}
-
 /* Responsive */
 @media (max-width: 768px) {
   .gradient-title {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
-  .robot-logo {
-    font-size: 2.2rem;
+  .gradient-text {
+    font-size: 2.5rem;
   }
-  .subtitle-text {
-    font-size: 1.25rem;
+  .gradient-title .text-muted {
+    font-size: 1.25rem !important;
   }
 }
